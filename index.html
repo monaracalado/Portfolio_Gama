@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Monara Calado</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h2> Meu Portfólio</h2>
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/monaracalado/">GitHub</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/monaracalado/">LinkedIn</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:monaracalado@hotmail.com">E-mail</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/+5581986770908">Whatsapp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Monara Calado</h1>
+                <h5>Full-Stack Developer</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i> 
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi a ab quam vero sequi ea sapiente velit suscipit amet, accusamus aliquam odio modi unde facere reprehenderit minima fugit voluptatem atque!
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder=" Seu melhor email :)">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

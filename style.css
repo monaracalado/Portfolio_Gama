@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: silver;
+    text-shadow: #141414 2px 2px 2px;
+}
+
+ul{
+    list-style: none;
+    font-style: italic;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url(./Simulação\ completa\ do\ nosso\ sistema\ solar….jfif) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+header ul{
+    display: flex;
+}
+
+header li{
+    margin: 5px;
+    border-bottom: 1px rgb(145, 145, 145) dashed;
+}
+
+header li a{
+    transition: 300ms;
+}
+
+header li a:hover{
+    color: #fff;
+}
+
+.container{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.container .name h1{
+    font-size: 60px;
+}
+
+.container .name h5{
+    font-size: 25px;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink{
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 300ms;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form{
+    width:500px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form input{
+    width: 50%;
+    text-shadow: #141414 0px 0px 0px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 50px;
+}
+
+.form button{
+    width: 15%;
+    text-shadow: #696666 2px 2px 2px;
+    padding: 5px 10px;
+    background-color: rgb(92, 89, 89);
+    color: snow ;
+    font-weight: 600;
+    border: none;
+    border-radius: 0px 50px 5px 0px;
+    margin: -5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.form button:hover{
+    background-color: rgb(163, 162, 162);
+}
+
+@media only screen and (max-width: 600px){
+
+    header{
+        flex-direction: column;
+    }
+
+    .container .name h1{
+        font-size: 30px;
+    }
+
+    .container .name h5{
+        font-size: 15px;
+    }
+
+    #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
+    
+    .form{
+        width: 100%;
+    }
+}
